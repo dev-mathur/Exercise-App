@@ -2,10 +2,12 @@ import React from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 export default class ExerciseList extends React.Component {
+  //Where exercises will be stored
   state = {
     exercises: []
   }
 
+  //Mount the API call and set state to current data
   componentDidMount() {
     axios.get(`http://localhost:8080/exercises`)
       .then(res => {
@@ -14,6 +16,7 @@ export default class ExerciseList extends React.Component {
       })
   }
 
+  //Delete request using axios
   deleteRow(id, e){
     axios.delete(`http://localhost:8080/exercise/${id}`)
       .then(res => {

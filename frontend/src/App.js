@@ -9,6 +9,7 @@ import {
   useRouteMatch,
   useParams
 } from "react-router-dom";
+//Routing between the list of exercises and the form
 export default function App() {
   return (
     <Router>

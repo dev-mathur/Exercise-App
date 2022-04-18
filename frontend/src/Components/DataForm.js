@@ -1,6 +1,8 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
+
+//Take in data from state and use in form to change/create
 export default function DataForm (props) {
     const location = useLocation();
     const { title, id, date, name, duration, caloriesBurnt } = location.state;
