@@ -19,7 +19,7 @@ public class Exercise {
     Exercise() {}
 
     //RequiredArgs Constructor
-    Exercise(String name, int duration, double caloriesBurnt, String date) {
+    public Exercise(String name, int duration, double caloriesBurnt, String date) {
         this.name = name;
         this.duration = duration;
         this.caloriesBurnt = caloriesBurnt;
